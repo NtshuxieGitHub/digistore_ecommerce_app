@@ -1,4 +1,3 @@
-import { desc } from "framer-motion/client";
 import mongoose from "mongoose";
 
 const productsSchema = new mongoose.Schema({
@@ -15,7 +14,7 @@ const productsSchema = new mongoose.Schema({
     required: true,
   },
   image: {
-    type: String,
+    type: [String],
     required: true,
   },
   category: {
